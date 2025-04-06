@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>QRコード読み取り</title>
+
+<script src="https://unpkg.com/html5-qrcode@2.3.7/html5-qrcode.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>QRコード読み取り</h1>
+
+<div id="reader" style="width: 300px;"></div>
+
+<p id="result">読み取り結果：なし</p>
+
+
+
+<script>
+
+const webAppUrl = "https://script.google.com/macros/s/AKfycbzGfoz2GnRtG9Nc5h5P33MgBs4zdF_vIqhwLVomzLbwuGNlWJasecYOrfRGj_gt4L0ETw/exec";
+
+
+
+function onScanSuccess(decodedText, decodedResult) {
+
+// 表示
+
+document.getElementById('result').textContent = '読み取り結果：' + decodedText;
+
+
+
+// データ送信（POST）
+
+fetch(webAppUrl, {
+
+method: "POST",
+
+body: JSON.stringify({ text: decodedText }),
+
+headers: {
+
+"Content-Type": "application/json"
+
+}
+
+})
+
+.then(response => response.text())
+
+.then(result => {
+
+console.log("送信成功:", result);
+
+alert("スプレッドシートに記録しました！");
+
+})
+
+.catch(error => {
+
+console.error("エラー:", error);
+
+alert("送信に失敗しました。");
+
+});
+
+}
+
+
+
+const html5QrCode = new Html5Qrcode("reader");
+
+
+
+Html5Qrcode.getCameras().then(devices => {
+
+if (devices && devices.length) {
+
+let cameraId = devices[0].id;
+
+html5QrCode.start(
+
+cameraId,
+
+{
+
+fps: 10, // 1秒間に何回スキャンするか
+
+qrbox: 250 // 読み取り範囲のサイズ
+
+},
+
+onScanSuccess
+
+);
+
+}
+
+}).catch(err => {
+
+console.error("カメラ取得エラー:", err);
+
+});
+
+</script>
+
+</body>
+
+</html>
+
