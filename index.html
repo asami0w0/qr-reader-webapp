@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.2.5.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;!DOCTYPE
+html&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;html
+lang=&quot;ja&quot;&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;head&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"> <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;meta
+charset=&quot;UTF-8&quot;&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"> <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;title&gt;QR</font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt"><span lang="zh-CN">コード読み取り</span></font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;/title&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"> <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;script
+src=&quot;https://unpkg.com/html5-qrcode@2.3.7/html5-qrcode.min.js&quot;&gt;&lt;/script&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;/head&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;body&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"> <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;h1&gt;QR</font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt"><span lang="zh-CN">コード読み取り</span></font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;/h1&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"> <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;div
+id=&quot;reader&quot; style=&quot;width: 300px;&quot;&gt;&lt;/div&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"> <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;p
+id=&quot;result&quot;&gt;</font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt"><span lang="zh-CN">読み取り結果：なし</span></font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;/p&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<br/>
+
+</p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"> <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;script&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">   <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">const
+webAppUrl =
+&quot;https://script.google.com/macros/s/AKfycbzGfoz2GnRtG9Nc5h5P33MgBs4zdF_vIqhwLVomzLbwuGNlWJasecYOrfRGj_gt4L0ETw/exec&quot;;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<br/>
+
+</p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">   <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">function
+onScanSuccess(decodedText, decodedResult) {</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">     <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">//
+</font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt"><span lang="zh-CN">表示</span></font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">    
+<font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">document.getElementById('result').textContent
+= '</font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt"><span lang="zh-CN">読み取り結果：</span></font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">'
++ decodedText;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<br/>
+
+</p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">     <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">//
+</font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt"><span lang="zh-CN">データ送信（</span></font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">POST</font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt"><span lang="zh-CN">）</span></font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">     <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">fetch(webAppUrl,
+{</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">       <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">method:
+&quot;POST&quot;,</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">       <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">body:
+JSON.stringify({ text: decodedText }),</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">       <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">headers:
+{</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">         <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&quot;Content-Type&quot;:
+&quot;application/json&quot;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">       <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">}</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">     <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">})</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">     <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">.then(response
+=&gt; response.text())</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">     <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">.then(result
+=&gt; {</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">       <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">console.log(&quot;</font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt"><span lang="zh-CN">送信成功</span></font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">:&quot;,
+result);</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">       <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">alert(&quot;</font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt"><span lang="zh-CN">スプレッドシートに記録しました！</span></font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&quot;);</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">     <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">})</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">     <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">.catch(error
+=&gt; {</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">       <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">console.error(&quot;</font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt"><span lang="zh-CN">エラー</span></font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">:&quot;,
+error);</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">       <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">alert(&quot;</font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt"><span lang="zh-CN">送信に失敗しました。</span></font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&quot;);</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">     <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">});</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">   <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">}</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<br/>
+
+</p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">   <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">const
+html5QrCode = new Html5Qrcode(&quot;reader&quot;);</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<br/>
+
+</p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">   <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">Html5Qrcode.getCameras().then(devices
+=&gt; {</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">     <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">if
+(devices &amp;&amp; devices.length) {</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">       <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">let
+cameraId = devices[0].id;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">       <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">html5QrCode.start(</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">         <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">cameraId,</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">         <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">{</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">           <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">fps:
+10,    // 1</font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt"><span lang="zh-CN">秒間に何回スキャンするか</span></font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">           <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">qrbox:
+250  // </font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt"><span lang="zh-CN">読み取り範囲のサイズ</span></font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">         <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">},</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">         <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">onScanSuccess</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">       <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">);</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">     <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">}</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">   <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">}).catch(err
+=&gt; {</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">     <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">console.error(&quot;</font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt"><span lang="zh-CN">カメラ取得エラー</span></font></font><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">:&quot;,
+err);</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000">   <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">});</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"> <font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;/script&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;/body&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<font color="#000000"><font face="HiraKakuProN-W3"><font size="2" style="font-size: 11pt">&lt;/html&gt;</font></font></font></p>
+<p align="left" style="line-height: 100%; orphans: 2; widows: 2; margin-bottom: 0in">
+<br/>
+
+</p>
+</body>
+</html>
